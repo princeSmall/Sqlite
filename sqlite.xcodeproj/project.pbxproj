@@ -17,6 +17,9 @@
 		5DF92EA21CBE0D25009A5156 /* sqliteUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF92EA11CBE0D25009A5156 /* sqliteUITests.m */; };
 		5DF92EB01CBE0D5A009A5156 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF92EAF1CBE0D5A009A5156 /* libsqlite3.tbd */; };
 		5DF92EB31CBE1182009A5156 /* Sqlite.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF92EB21CBE1182009A5156 /* Sqlite.m */; };
+		5DF92EB61CBE1A24009A5156 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF92EB51CBE1A24009A5156 /* Student.m */; };
+		5DF92EB91CBE1B1C009A5156 /* DatabaseCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF92EB81CBE1B1C009A5156 /* DatabaseCenter.m */; };
+		5DF92EBC1CBE1B9A009A5156 /* DataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF92EBB1CBE1B9A009A5156 /* DataBase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,12 @@
 		5DF92EAF1CBE0D5A009A5156 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		5DF92EB11CBE1182009A5156 /* Sqlite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sqlite.h; sourceTree = "<group>"; };
 		5DF92EB21CBE1182009A5156 /* Sqlite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sqlite.m; sourceTree = "<group>"; };
+		5DF92EB41CBE1A24009A5156 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		5DF92EB51CBE1A24009A5156 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		5DF92EB71CBE1B1C009A5156 /* DatabaseCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseCenter.h; sourceTree = "<group>"; };
+		5DF92EB81CBE1B1C009A5156 /* DatabaseCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseCenter.m; sourceTree = "<group>"; };
+		5DF92EBA1CBE1B9A009A5156 /* DataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBase.h; sourceTree = "<group>"; };
+		5DF92EBB1CBE1B9A009A5156 /* DataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +121,12 @@
 				5DF92E801CBE0D25009A5156 /* AppDelegate.m */,
 				5DF92EB11CBE1182009A5156 /* Sqlite.h */,
 				5DF92EB21CBE1182009A5156 /* Sqlite.m */,
+				5DF92EB71CBE1B1C009A5156 /* DatabaseCenter.h */,
+				5DF92EB81CBE1B1C009A5156 /* DatabaseCenter.m */,
+				5DF92EBA1CBE1B9A009A5156 /* DataBase.h */,
+				5DF92EBB1CBE1B9A009A5156 /* DataBase.m */,
+				5DF92EB41CBE1A24009A5156 /* Student.h */,
+				5DF92EB51CBE1A24009A5156 /* Student.m */,
 				5DF92E821CBE0D25009A5156 /* ViewController.h */,
 				5DF92E831CBE0D25009A5156 /* ViewController.m */,
 				5DF92E851CBE0D25009A5156 /* Main.storyboard */,
@@ -283,9 +298,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DF92E841CBE0D25009A5156 /* ViewController.m in Sources */,
+				5DF92EBC1CBE1B9A009A5156 /* DataBase.m in Sources */,
 				5DF92EB31CBE1182009A5156 /* Sqlite.m in Sources */,
+				5DF92EB61CBE1A24009A5156 /* Student.m in Sources */,
 				5DF92E811CBE0D25009A5156 /* AppDelegate.m in Sources */,
 				5DF92E7E1CBE0D25009A5156 /* main.m in Sources */,
+				5DF92EB91CBE1B1C009A5156 /* DatabaseCenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +529,7 @@
 				5DF92EA81CBE0D25009A5156 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5DF92EA91CBE0D25009A5156 /* Build configuration list for PBXNativeTarget "sqliteTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +538,7 @@
 				5DF92EAB1CBE0D25009A5156 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5DF92EAC1CBE0D25009A5156 /* Build configuration list for PBXNativeTarget "sqliteUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +547,7 @@
 				5DF92EAE1CBE0D25009A5156 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

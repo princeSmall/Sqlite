@@ -16,20 +16,20 @@
 
 @implementation Sqlite
 -(void)keepSqlite{
-NSArray * paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-NSString * documents = [paths objectAtIndex:0];
-NSString * database_path = [documents stringByAppendingPathComponent:DENAME];
-if (sqlite3_open([database_path UTF8String], &db) != SQLITE_OK) {
+     NSArray * paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+     NSString * documents = [paths objectAtIndex:0];
+     NSString * database_path = [documents stringByAppendingPathComponent:DENAME];
+     if (sqlite3_open([database_path UTF8String], &db) != SQLITE_OK) {
     sqlite3_close(db);
-    NSLog(@"数据库打开失败");
+     NSLog(@"数据库打开失败");
 }
-NSString *sqlCreateTable = @"CREATE TABLE IF NOT EXISTS PERSONINFO (ID INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, age INTEGER, address TEXT)";
-[self excelSql:sqlCreateTable];
-NSString *sql1 = [NSString stringWithFormat:
+     NSString *sqlCreateTable = @"CREATE TABLE IF NOT EXISTS PERSONINFO (ID INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, age INTEGER, address TEXT)";
+    [self excelSql:sqlCreateTable];
+     NSString *sql1 = [NSString stringWithFormat:
                   @"INSERT INTO '%@' ('%@', '%@', '%@') VALUES ('%@', '%@', '%@')",
                   TABLENAME, NAME, AGE, ADDRESS, @"张三", @"23", @"西城区"];
 
-NSString *sql2 = [NSString stringWithFormat:
+    NSString *sql2 = [NSString stringWithFormat:
                   @"INSERT INTO '%@' ('%@', '%@', '%@') VALUES ('%@', '%@', '%@')",
                   TABLENAME, NAME, AGE, ADDRESS, @"老六", @"20", @"东城区"];
 [self excelSql:sql1];
