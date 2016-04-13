@@ -15,6 +15,8 @@
 		5DF92E8C1CBE0D25009A5156 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF92E8A1CBE0D25009A5156 /* LaunchScreen.storyboard */; };
 		5DF92E971CBE0D25009A5156 /* sqliteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF92E961CBE0D25009A5156 /* sqliteTests.m */; };
 		5DF92EA21CBE0D25009A5156 /* sqliteUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF92EA11CBE0D25009A5156 /* sqliteUITests.m */; };
+		5DF92EB01CBE0D5A009A5156 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF92EAF1CBE0D5A009A5156 /* libsqlite3.tbd */; };
+		5DF92EB31CBE1182009A5156 /* Sqlite.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF92EB21CBE1182009A5156 /* Sqlite.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		5DF92E9D1CBE0D25009A5156 /* sqliteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sqliteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DF92EA11CBE0D25009A5156 /* sqliteUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sqliteUITests.m; sourceTree = "<group>"; };
 		5DF92EA31CBE0D25009A5156 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DF92EAF1CBE0D5A009A5156 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		5DF92EB11CBE1182009A5156 /* Sqlite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sqlite.h; sourceTree = "<group>"; };
+		5DF92EB21CBE1182009A5156 /* Sqlite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sqlite.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DF92EB01CBE0D5A009A5156 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +87,7 @@
 		5DF92E701CBE0D25009A5156 = {
 			isa = PBXGroup;
 			children = (
+				5DF92EAF1CBE0D5A009A5156 /* libsqlite3.tbd */,
 				5DF92E7B1CBE0D25009A5156 /* sqlite */,
 				5DF92E951CBE0D25009A5156 /* sqliteTests */,
 				5DF92EA01CBE0D25009A5156 /* sqliteUITests */,
@@ -103,6 +110,8 @@
 			children = (
 				5DF92E7F1CBE0D25009A5156 /* AppDelegate.h */,
 				5DF92E801CBE0D25009A5156 /* AppDelegate.m */,
+				5DF92EB11CBE1182009A5156 /* Sqlite.h */,
+				5DF92EB21CBE1182009A5156 /* Sqlite.m */,
 				5DF92E821CBE0D25009A5156 /* ViewController.h */,
 				5DF92E831CBE0D25009A5156 /* ViewController.m */,
 				5DF92E851CBE0D25009A5156 /* Main.storyboard */,
@@ -274,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DF92E841CBE0D25009A5156 /* ViewController.m in Sources */,
+				5DF92EB31CBE1182009A5156 /* Sqlite.m in Sources */,
 				5DF92E811CBE0D25009A5156 /* AppDelegate.m in Sources */,
 				5DF92E7E1CBE0D25009A5156 /* main.m in Sources */,
 			);

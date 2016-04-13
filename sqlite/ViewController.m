@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Sqlite.h"
 
 @interface ViewController ()
 
@@ -16,9 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    Sqlite * slite = [[Sqlite alloc]init];
+    [slite keepSqlite];
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
